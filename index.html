@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment xiryou</title>
+    <title>Payment Xiryou</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -61,9 +61,20 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
-        .payment-grid {
+        .products-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 25px;
             margin-bottom: 40px;
         }
@@ -136,6 +147,60 @@
         .card-content {
             position: relative;
             z-index: 2;
+        }
+
+        .product-list {
+            list-style: none;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .product-item:last-child {
+            border-bottom: none;
+        }
+
+        .product-name {
+            font-size: 1rem;
+        }
+
+        .product-price {
+            background: var(--secondary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .product-channel {
+            margin-top: 15px;
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+
+        .product-channel a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .product-channel a:hover {
+            text-decoration: underline;
+        }
+
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
         }
 
         .payment-number {
@@ -277,7 +342,7 @@
                 font-size: 2.2rem;
             }
             
-            .payment-grid {
+            .products-grid, .payment-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -290,10 +355,144 @@
 <body>
     <div class="container">
         <header>
-            <h1>Payment xiryou</h1>
+            <h1>Payment Xiryou</h1>
             <p class="subtitle">Lakukan pembayaran dengan mudah dan aman</p>
         </header>
 
+        <!-- Products Section -->
+        <section class="products-section">
+            <h2 class="section-title">Produk Kami</h2>
+            
+            <div class="products-grid">
+                <!-- Jasa Pembuatan Logo -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h2 class="card-title">Jasa Pembuatan Logo</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <span class="product-name">PP STORE</span>
+                                <span class="product-price">5K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">BIG TESTIMONI</span>
+                                <span class="product-price">5K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">FRAME QRIS</span>
+                                <span class="product-price">5K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">TRX DONE</span>
+                                <span class="product-price">6K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">BANNER WA BISNIS</span>
+                                <span class="product-price">6K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">LIST FEE REKBER</span>
+                                <span class="product-price">7K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">TAHAPAN REKBER</span>
+                                <span class="product-price">6K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">LOGO ALL TRX ON/OFF</span>
+                                <span class="product-price">6K</span>
+                            </li>
+                        </ul>
+                        <div class="product-channel">
+                            Info lengkap: <a href="https://whatsapp.com/channel/0029VbBLBYhKLaHr8irhPM1W" target="_blank">Join Channel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WTS APK BY XIRYOU -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h2 class="card-title">WTS APK BY XIRYOU</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <span class="product-name">APK BIOSKOP</span>
+                                <span class="product-price">1K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">APK WINK PREMIUM (PERMANEN)</span>
+                                <span class="product-price">1K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">APK QRIS ALL PAYMENT</span>
+                                <span class="product-price">1K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">APK LOGO</span>
+                                <span class="product-price">1K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">APK ROG PREM</span>
+                                <span class="product-price">1K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">APK AFK FIST IT (+TUTOR)</span>
+                                <span class="product-price">1K</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NOKOS ALL NEGARA -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h2 class="card-title">NOKOS ALL NEGARA</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <span class="product-name">Nokos Indonesia</span>
+                                <span class="product-price">5K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">Nokos Filipina</span>
+                                <span class="product-price">7K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">Nokos Peru</span>
+                                <span class="product-price">8K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">Nokos India</span>
+                                <span class="product-price">10K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">Nokos Hongkong</span>
+                                <span class="product-price">10K</span>
+                            </li>
+                            <li class="product-item">
+                                <span class="product-name">Nokos Malaysia</span>
+                                <span class="product-price">16K</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Methods -->
+        <h2 class="section-title">Metode Pembayaran</h2>
         <div class="payment-grid">
             <!-- DANA Card -->
             <div class="card">
@@ -371,7 +570,7 @@
                         <i class="fab fa-whatsapp"></i>
                     </div>
                     <h3 class="contact-title">WhatsApp 2</h3>
-                    <a href="https://wa.me/6287759340782" target="_blank" class="btn" style="width: 100%; margin-top: 10px;">
+            <a href="https://wa.me/6287759340782" target="_blank" class="btn" style="width: 100%; margin-top: 10px;">
                         <i class="fab fa-whatsapp"></i> Chat Sekarang
                     </a>
                 </div>
